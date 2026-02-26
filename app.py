@@ -3,7 +3,7 @@ from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 import tempfile
 
-aai.settings.api_key = "82516763dec94bb68be6fcae918b9dfd"  # Replace this
+aai.settings.api_key = "Your_API_KEY"  # Replace this
 
 app = FastAPI()
 
@@ -31,3 +31,4 @@ async def transcribe_audio(file: UploadFile = File(...)):
             for u in transcript.utterances
         ]
     }
+
